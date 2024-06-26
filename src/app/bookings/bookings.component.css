@@ -1,0 +1,43 @@
+.space{
+    margin: 110px;
+}
+
+.main {
+    width: 30%;
+    margin: 0 auto;
+    margin-left: 35%; 
+}
+
+.box {
+    border-radius: 15px;
+    background-color: #192259;
+    margin-bottom: 10px;
+    width: 100%; 
+}
+
+.text {
+    margin: 10px;
+    text-align: justify;
+}
+
+.color {
+    color: rgb(219, 179, 18);
+}
+
+.color i {
+    color: rgb(219, 179, 18);
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    .main{
+        width: 90%;
+        margin: 0  auto;
+    }
+    
+    .box {
+        width: 100%;
+    }
+    
+}

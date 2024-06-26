@@ -1,0 +1,49 @@
+<section>
+  <nav class="navbar navbar-expand-lg fixed-top p-0 bg border-bottom" *ngIf="showHeader">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img class="logo" src="https://goldbharat.com/assets/GoldBharatone.png" alt="Logo">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <p class="nav-link" routerLink="/LiveRates">Live Rates</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" routerLink="/AboutUs">About Us</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" routerLink="/Products">Products</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" routerLink="/LocateUs">Locate Us</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" routerLink="/PrivacyPolicy">Privacy Policy</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" (click)="onChartClick()">Chart</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" (click)="onMarginClick()">Margin</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" (click)="onRateAlertClick()">Rate Alert</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" routerLink="/Bookings">Booking</p>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button type="button" class="btn active rounded-pill me-2" data-bs-toggle="button" >
+            <a routerLink="/Register">Register</a>
+          </button>
+          <button type="button" class="btn btn-warning rounded-pill" routerLink="/Login">Login</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>

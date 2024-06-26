@@ -1,0 +1,68 @@
+<section>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="container-fluid bg">
+        <div class="box">
+          <div>
+            <img src="https://goldbharat.com/assets/GoldBharatone.png" class="logo">
+          </div>
+          <div>
+            <h3>Hello! Register to get started</h3>
+            <h5>Business Information</h5>
+          </div>
+          <div>
+            <div>
+                <label>Business Name</label>
+            <input type="text" id="text" placeholder="Ex: Retail Gold" formControlName="Business" >
+            </div>
+
+            <div>
+                <label class="star">Person Full Name</label>
+                <input type="text" id="text" placeholder="Ex: Kumar" formControlName="Person">
+                <small *ngIf="registerForm.get('Person')?.invalid && registerForm.get('Person')?.touched">
+                    *Person Name is required
+                </small>
+            </div>
+
+            <div>
+            <label class="star">Email</label>
+            <input type="email" id="email" placeholder="Ex: **********@gmail.com" formControlName="Email">
+            <small *ngIf="registerForm.get('Email')?.invalid && registerForm.get('Email')?.touched">
+                *Email ID is required
+            </small>
+            </div>
+
+            <div>
+                <label class="star">Phone Number</label>
+                <input type="tel" id="phone"  placeholder="Ex: +91*********" formControlName="Phone">
+                <small *ngIf="registerForm.get('Phone')?.invalid && registerForm.get('Phone')?.touched">
+                    *Mobile Number is required
+                </small>
+            </div>
+
+            <div>
+                <label class="star">Shop Establish Date</label>
+                <input type="date" id="date" formControlName="Shop">
+                <small *ngIf="registerForm.get('Shop')?.invalid && registerForm.get('Shop')?.touched">
+                    *Shop Date is required
+                </small>
+            </div>
+
+            <div>
+                <label class="star">Pin Code</label>
+                <input type="text" id="text" placeholder="Ex: 5*****" formControlName="PinCode">
+                <small *ngIf="registerForm.get('PinCode')?.invalid && registerForm.get('PinCode')?.touched">
+                    *PinCode is required
+                </small>
+            </div>      
+          </div>
+          <div class="login">
+            <button id="loginButton" class="btn" type="button" [disabled]="!registerForm.valid">Register</button>
+          </div>
+          <div class="Register">
+            <p>Already have an account? <span><a routerLink="/Login">Login Now</a></span></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  

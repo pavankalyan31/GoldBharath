@@ -1,0 +1,113 @@
+.bg{
+    background-color: rgb(2, 2, 84);
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+h3{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+h5{
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(219, 179, 18);
+}
+
+.box{
+    border-radius: 5px;
+    background-color: #fff;
+    width: 30%;
+    padding: 20px;
+    background-color: #192259;
+}
+
+.logo{
+    margin-left: 35%;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(219, 179, 18);
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(2, 2, 84);
+    border:none ;
+    border-radius: 5px;
+    color: white;
+}
+
+#date{
+    color: white;
+}
+
+.login{
+    margin-top: 50px;
+}
+
+.btn{
+    background-color: #b7bcbd;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(219, 179, 18);
+}
+
+.Register{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.terms{
+   color: #630914
+}
+
+
+.i{
+    color: black;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.star::after{
+    content: "*";
+    color: red;
+    font-size: 20px;
+    margin: 5px;
+}
+
+input.ng-invalid .ng-touched{
+    border: 2px red solid;
+}
+
+small{
+    color: red;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .box{
+        width: 100%;
+    }
+    
+}

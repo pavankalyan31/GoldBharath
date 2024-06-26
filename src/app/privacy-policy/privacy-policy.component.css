@@ -1,0 +1,25 @@
+.space{
+    margin: 100px;
+}
+
+p{
+    text-align: justify;
+}
+
+.head{
+    font-size: 22px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    h2{
+        font-size: 20px;
+    }
+    .head{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+}

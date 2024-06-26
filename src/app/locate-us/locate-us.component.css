@@ -1,0 +1,170 @@
+.space{
+    margin: 100px;
+}
+
+.Our{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box3 {
+    background-color: #192259;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.box3 iframe{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;   
+}
+
+.loc{
+    background-color: white;
+    text-align: left;
+    color: black;
+    width: 90%;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.text{
+    display:  flex;
+    justify-content: left;
+    column-gap: 20px;
+}
+
+.color{
+    color: rgb(219, 179, 18);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(219, 179, 18);
+    position: relative;
+}
+
+.circle i{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 13px;
+    left: 12px;
+}
+
+.circle2{
+    width: 90px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(219, 179, 18);
+    position: relative;
+}
+
+.circle2  i{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+
+    .Our{
+        font-size: 25px;
+    }
+    
+    .loc{
+        margin: 10px 15px;
+    }
+
+    .circle{
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle i{
+        font-size: 20px;
+        top: 11px;
+        left: 9px;
+    }
+
+    .circle2{
+        width: 180px;
+        height: 40px;
+    }
+    
+    .circle2  i{
+        font-size: 20px;
+        top: 9px;
+        left: 7px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    
+    .circle2{
+        width: 150px;
+        height: 50px;
+    }
+    
+    .circle2  i{
+        font-size: 25px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:767px) {
+    .Our{
+        font-size: 25px;
+    }
+    .loc{
+        margin: 5px 20px;
+    }
+
+    .circle{
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle i{
+        font-size: 20px;
+        top: 11px;
+        left: 10px;
+    }
+
+    
+    .circle2{
+        width: 150px;
+        height: 40px;
+    }
+    
+    .circle2  i{
+        font-size: 20px;
+        top: 9px;
+        left: 8px;
+    }
+}
+
+@media screen and (min-width:765px) and (max-width:1023px) {
+
+    .circle2{
+        width: 200px;
+        height: 50px;
+    }
+    
+    .circle2  i{
+        font-size: 22px;
+        top: 12px;
+        left: 11px;
+    }
+}
